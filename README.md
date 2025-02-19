@@ -1,65 +1,46 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+export default function Portfolio() {
+  const projects = [
+    { title: "Customer Segmentation Analysis", status: "Coming Soon" },
+    { title: "Sales Trend Prediction with Python", status: "Coming Soon" },
+    { title: "SQL Data Cleaning Project", status: "Coming Soon" }
+  ];
 
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll site to Pages
+  return (
+    <div className="min-h-screen bg-gray-100 p-6">
+      <div className="max-w-3xl mx-auto bg-white p-6 rounded-2xl shadow-lg">
+        {/* About Me Section */}
+        <section className="mb-6">
+          <h1 className="text-3xl font-bold text-gray-800">About Me</h1>
+          <p className="text-gray-600 mt-2">
+            Hi, I'm a data enthusiast currently transitioning into Data Analytics. I love working with data
+            to extract insights and build solutions that drive decision-making.
+          </p>
+        </section>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+        {/* Upcoming Projects Section */}
+        <section className="mb-6">
+          <h2 className="text-2xl font-bold text-gray-800">Upcoming Projects</h2>
+          <ul className="mt-2 space-y-2">
+            {projects.map((project, index) => (
+              <li key={index} className="p-3 bg-gray-200 rounded-lg">
+                <span className="font-semibold">{project.title}</span> - {project.status}
+              </li>
+            ))}
+          </ul>
+        </section>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Ruby
-        # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
-        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
-        with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        {/* Contact Me Section */}
+        <section>
+          <h2 className="text-2xl font-bold text-gray-800">Contact Me</h2>
+          <p className="text-gray-600 mt-2">Feel free to reach out for collaborations or discussions.</p>
+          <a
+            href="mailto:your.email@example.com"
+            className="mt-3 inline-block bg-blue-500 text-white px-4 py-2 rounded-xl shadow-md hover:bg-blue-600"
+          >
+            Email Me
+          </a>
+        </section>
+      </div>
+    </div>
+  );
+}
