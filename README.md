@@ -38,17 +38,19 @@
         .about {
             margin-bottom: 20px;
             padding: 15px;
-            background: #d9edf7;
+            background: black; /* Black background for about card */
             border-radius: 5px;
             font-size: 18px;
             font-weight: bold;
+            color: white; /* White text */
         }
         .about img {
-            width: 75px; /* Reduce the size by 50% */
-            height: 75px; /* Reduce the size by 50% */
+            width: 112px; /* Increase size by 50% */
+            height: 112px; /* Increase size by 50% */
             border-radius: 50%; /* Make it a circle */
             display: block;
             margin: 10px auto;
+            background: none; /* Remove background color */
         }
         .project {
             margin: 20px 0;
@@ -72,7 +74,7 @@
             color: yellow; /* Yellow text */
         }
         .contact a {
-            color: yellow;
+            color: blue; /* Change LinkedIn URL and email color to blue */
             text-decoration: none;
             display: flex;
             align-items: center;
