@@ -1,18 +1,19 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edmund Frimpong - Data Analysis Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
         :root {
             --primary-color: #ff8c00;
             --secondary-color: #ffd700;
             --background-color: black;
             --text-color: white;
-            --card-radius: 10px; /* More rounded cards */
-            --shadow-color: rgba(0, 0, 0, 0.4); /* Subtle shadow color */
+            --card-radius: 10px;
+            --shadow-color: rgba(0, 0, 0, 0.4);
         }
 
         body {
@@ -56,13 +57,13 @@
             margin-bottom: 40px;
         }
         h1 {
-            font-family: 'Proxima Nova', sans-serif;
+            font-family: 'Montserrat', sans-serif; /* Changed to Montserrat font */
             font-size: 48px;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            -webkit-background-clip: text;
-            color: transparent;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-            text-align: left;
+            color: white;
+            text-align: center;
+            background: none;
+            text-shadow: none;
+            margin-bottom: 40px;
         }
         .headshot {
             width: 225px;
@@ -102,10 +103,6 @@
         .project {
             font-size: 20px;
             color: yellow;
-        }
-        .project span {
-            color: red;
-            animation: pulse 2s infinite;
         }
         .contact {
             width: 100%;
@@ -196,6 +193,7 @@
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
         </div>
     </div>
+    <h1>Data Analysis Portfolio</h1>
     <section id="skills" class="skills">
         <i class="fas fa-database"></i> SQL
         <i class="fas fa-chart-line"></i> Power BI
