@@ -94,3 +94,54 @@
     </div>
 </body>
 </html>
+h1 {
+    color: yellow; /* Change header text color to yellow */
+    font-size: 36px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* 3D effect */
+}
+
+.about {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #d9edf7;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project {
+    margin: 20px 0;
+    padding: 15px;
+    background: black; /* Black background for project cards */
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white; /* White text */
+}
+
+.project span {
+    color: yellow; /* Change "Coming Soon" text color to yellow */
+}
+
+.contact {
+    margin-top: 20px;
+    padding: 15px;
+    background: #dff0d8;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact a {
+    color: #337ab7;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.contact img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
