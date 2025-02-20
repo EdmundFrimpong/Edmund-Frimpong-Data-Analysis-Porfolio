@@ -41,7 +41,7 @@
             border-radius: 5px;
             font-size: 20px;
             font-weight: bold;
-            color: white; /* White text */
+            color: yellow; /* Yellow text */
         }
         .project span {
             color: yellow; /* Change "Coming Soon" text color to yellow */
@@ -49,12 +49,13 @@
         .contact {
             margin-top: 20px;
             padding: 15px;
-            background: #dff0d8;
+            background: black; /* Black background for contact card */
             border-radius: 5px;
             font-size: 16px;
+            color: yellow; /* Yellow text */
         }
         .contact a {
-            color: #337ab7;
+            color: yellow;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -82,4 +83,12 @@
         <div class="contact">
             <p>Contact Me:</p>
             <a href="mailto:edxfrimpong@gmail.com">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email icon"> edxfrimpong@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn icon"> Edmund Frimpong
+            </a>
+        </div>
+    </div>
+</body>
+</html>
