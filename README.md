@@ -47,8 +47,7 @@
         }
         .container {
             display: grid;
-            grid-template-columns: 1fr 2fr; /* Adjusted for headshot and about description */
-            align-items: center;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
         }
         h1 {
@@ -58,14 +57,12 @@
             -webkit-background-clip: text;
             color: transparent;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-            text-align: left; /* Make the title a straight line */
         }
         .headshot {
             width: 225px; 
             height: 225px; 
             border-radius: 50%; 
-            margin: 20px;
-            justify-self: start; /* Align headshot to the left */
+            margin: 20px auto;
         }
         @keyframes pulse {
             0% { transform: scale(1); }
@@ -83,9 +80,6 @@
             font-weight: bold;
             color: var(--text-color);
             transition: transform 0.3s, background 0.3s, color 0.3s;
-        }
-        .about {
-            justify-self: start; /* Align about description to the right of the headshot */
         }
         .project {
             font-size: 20px;
@@ -156,3 +150,69 @@
                 grid-template-columns: 1fr;
             }
             .headshot {
+                width: 150px;
+                height: 150px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+    <meta name="description" content="Data Analysis Portfolio of Edmund Frimpong showcasing projects and skills in SQL, Excel, and Power BI.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 id="top">My Data Analysis Portfolio</h1>
+        <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong" class="headshot">
+        <section id="about" class="about">
+            Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
+        </section>
+        <section id="skills" class="skills">
+            <i class="fas fa-database"></i> SQL
+            <i class="fas fa-chart-line"></i> Power BI
+            <i class="fas fa-file-excel"></i> Excel
+        </section>
+        <section id="projects">
+            <div class="project">
+                <h3>SQL Project</h3>
+                <p>Analysis of sales data using SQL.</p>
+                <a href="https://github.com/EdmundFrimpong/sql-project" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Capstone Project</h3>
+                <p>Comprehensive data analysis project integrating multiple skills.</p>
+                <a href="https://github.com/EdmundFrimpong/capstone-project" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Excel Project</h3>
+                <p>Financial modeling and analysis using Excel.</p>
+                <a href="https://github.com/EdmundFrimpong/excel-project" target="_blank">View Project</a>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"Edmund's analytical skills are top-notch. He provided invaluable insights for our project."</p>
+                <p><strong>- John Doe, Project Manager</strong></p>
+            </div>
+        </section>
+    </div>
+    <section id="contact" class="contact">
+        <a href="mailto:edxfrimpong@gmail.com">edxfrimpong@gmail.com</a>
+        <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">Edmund Frimpong</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Edmund Frimpong. All rights reserved.</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>
