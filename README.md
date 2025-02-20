@@ -27,6 +27,13 @@
             font-size: 18px;
             font-weight: bold;
         }
+        .about img {
+            width: 75px; /* Reduce the size by 50% */
+            height: 75px; /* Reduce the size by 50% */
+            border-radius: 50%; /* Make it a circle */
+            display: block;
+            margin: 10px auto;
+        }
         .project {
             margin: 20px 0;
             padding: 15px;
@@ -75,12 +82,4 @@
         <div class="contact">
             <p>Contact Me:</p>
             <a href="mailto:edxfrimpong@gmail.com">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email icon"> edxfrimpong@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn icon"> Edmund Frimpong
-            </a>
-        </div>
-    </div>
-</body>
-</html>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS
