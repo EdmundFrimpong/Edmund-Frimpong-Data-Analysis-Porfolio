@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edmund Frimpong - Data Analysis Portfolio</title>
+    <title>Data Analysis Portfolio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
@@ -265,7 +264,7 @@
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
         </div>
     </div>
-    <h1>Data Analysis Portfolio</h1>
+    <h1>Tools</h1>
     <section id="skills" class="skills">
         <i class="fas fa-database"></i> SQL
         <i class="fas fa-chart-line"></i> Power BI
