@@ -24,6 +24,12 @@
             color: transparent; /* Set text color to transparent to show gradient */
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* 3D effect */
         }
+        .headshot {
+            width: 225px; /* Increase size by 50% */
+            height: 225px; /* Increase size by 50% */
+            border-radius: 50%; /* Make it a circle */
+            margin: 20px auto; /* Center the image and add margin */
+        }
         @keyframes pulse {
             0% {
                 transform: scale(1);
@@ -43,14 +49,6 @@
             font-size: 18px;
             font-weight: bold;
             color: white; /* White text */
-            position: relative; /* Position relative for image overlay */
-        }
-        .about img {
-            width: 225px; /* Increase size by 50% */
-            height: 225px; /* Increase size by 50% */
-            border-radius: 50%; /* Make it a circle */
-            margin: 0 auto 20px; /* Center the image and add margin at the bottom */
-            background: none; /* Remove background color */
         }
         .project {
             margin: 20px 0;
