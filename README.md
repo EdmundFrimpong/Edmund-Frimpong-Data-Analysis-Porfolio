@@ -46,10 +46,10 @@
             color: var(--secondary-color);
         }
         .container {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 20px;
+            display: flex;
             align-items: center;
+            gap: 20px;
+            justify-content: center;
         }
         h1 {
             font-family: 'Proxima Nova', sans-serif; 
@@ -64,7 +64,6 @@
             width: 225px; 
             height: 225px; 
             border-radius: 50%;
-            margin: 0 auto 0 0; /* Align the image to the left */
         }
         .about-description {
             text-align: left;
@@ -153,7 +152,7 @@
         }
         @media (max-width: 768px) {
             .container {
-                grid-template-columns: 1fr;
+                flex-direction: column;
                 text-align: center;
             }
             .headshot {
@@ -193,7 +192,6 @@
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
         </div>
     </div>
-    <h1 id="top">My Data Analysis Portfolio</h1>
     <section id="skills" class="skills">
         <i class="fas fa-database"></i> SQL
         <i class="fas fa-chart-line"></i> Power BI
