@@ -41,34 +41,3 @@
             padding: 15px;
             background: black; /* Black background for project cards */
             border-radius: 5px;
-            font-size: 20px;
-            font-weight: bold;
-            color: yellow; /* Yellow text */
-        }
-        .contact {
-            margin-top: 20px;
-            padding: 15px;
-            background: #dff0d8;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        .contact a {
-            color: #337ab7;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 10px 0;
-        }
-        .contact img {
-            width: 24px;
-            height: 24px;
-            margin-right: 8px;
-        }
-    </style>
-    <meta name="description" content="Data Analysis Portfolio of Edmund Frimpong showcasing projects and skills in SQL, Excel, and Power BI.">
-</head>
-<body>
-    <div class="container">
-        <h1>My Data Analysis Portfolio</h1>
-        <div class="about">
