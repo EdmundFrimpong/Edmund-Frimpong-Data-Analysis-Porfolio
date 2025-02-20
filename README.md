@@ -234,6 +234,10 @@
             }
             .about-description {
                 text-align: center;
+                font-size: 32px; /* Increased font size */
+                font-weight: bold;
+                color: var(--text-color);
+                max-width: 600px;
             }
             body {
                 padding: 20px;
