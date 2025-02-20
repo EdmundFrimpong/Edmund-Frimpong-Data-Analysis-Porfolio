@@ -16,7 +16,6 @@
             --shadow-color: rgba(0, 0, 0, 0.4);
         }
 
-        /* Set Montserrat as the default font for the entire page */
         body {
             font-family: 'Montserrat', sans-serif;
             background-image: url('https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/878114.jpg');
@@ -92,6 +91,7 @@
             color: var(--text-color);
             transition: transform 0.3s, background 0.3s, color 0.3s, box-shadow 0.3s;
             box-shadow: 0 4px 8px var(--shadow-color);
+            position: relative;
         }
         .project:hover,
         .testimonial:hover,
@@ -101,9 +101,46 @@
             transform: scale(1.05);
             box-shadow: 0 8px 16px var(--shadow-color);
         }
-        .project {
-            font-size: 20px;
-            color: yellow;
+        .project .coming-soon,
+        .capstone-project .coming-soon,
+        .excel-project .coming-soon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red;
+            color: white;
+            padding: 5px 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transform: rotate(-45deg);
+            transform-origin: top left;
+            z-index: 1;
+            animation: slide-in 2s ease-in-out infinite alternate;
+        }
+        @keyframes slide-in {
+            0% {
+                top: -30px;
+                opacity: 0;
+            }
+            100% {
+                top: 20px;
+                opacity: 1;
+            }
+        }
+        .project .contact-me {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .contact-me a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 5px;
+            font-weight: bold;
+        }
+        .contact-me a:hover {
+            color: #ff8c00;
         }
         .contact {
             width: 100%;
@@ -202,19 +239,37 @@
     </section>
     <section id="projects">
         <div class="project">
+            <div class="contact-me">
+                <p>Contact Me:</p>
+                <a href="mailto:edxfrimpong@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">LinkedIn</a>
+            </div>
             <h3>SQL Project</h3>
             <p>Analysis of sales data using SQL.</p>
             <a href="https://github.com/EdmundFrimpong/sql-project" target="_blank">View Project</a>
+            <div class="coming-soon">COMING SOON!!!</div>
         </div>
         <div class="project">
+            <div class="contact-me">
+                <p>Contact Me:</p>
+                <a href="mailto:edxfrimpong@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">LinkedIn</a>
+            </div>
             <h3>Capstone Project</h3>
             <p>Comprehensive data analysis project integrating multiple skills.</p>
             <a href="https://github.com/EdmundFrimpong/capstone-project" target="_blank">View Project</a>
+            <div class="coming-soon">COMING SOON!!!</div>
         </div>
         <div class="project">
+            <div class="contact-me">
+                <p>Contact Me:</p>
+                <a href="mailto:edxfrimpong@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">LinkedIn</a>
+            </div>
             <h3>Excel Project</h3>
             <p>Financial modeling and analysis using Excel.</p>
             <a href="https://github.com/EdmundFrimpong/excel-project" target="_blank">View Project</a>
+            <div class="coming-soon">COMING SOON!!!</div>
         </div>
     </section>
     <section id="testimonials">
