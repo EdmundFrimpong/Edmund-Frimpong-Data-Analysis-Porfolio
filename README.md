@@ -1,4 +1,3 @@
-!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,11 +29,20 @@
             font-size: 20px;
             font-weight: bold;
         }
+        .about {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #d9edf7;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>My Data Analysis Portfolio</h1>
+        <div class="about">Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI</div>
         <div class="project">SQL Project - <span style="color: red;">Coming Soon</span></div>
         <div class="project">Capstone Project - <span style="color: red;">Coming Soon</span></div>
         <div class="project">Excel Project - <span style="color: red;">Coming Soon</span></div>
