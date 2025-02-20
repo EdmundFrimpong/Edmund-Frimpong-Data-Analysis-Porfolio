@@ -8,10 +8,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@700&display=swap');
 
         body {
-            background-image: url('https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/878114.jpg');
-            background-size: cover;
-            background-position: center center;
+            background-image: url('https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/878114.jpg'), url('https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png');
+            background-size: cover, 150%;
+            background-position: center center, right top;
             background-attachment: fixed;
+            background-repeat: no-repeat;
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
@@ -43,14 +44,6 @@
             font-size: 18px;
             font-weight: bold;
             color: white; /* White text */
-        }
-        .about img {
-            width: 112px; /* Increase size by 50% */
-            height: 112px; /* Increase size by 50% */
-            border-radius: 50%; /* Make it a circle */
-            display: block;
-            margin: 10px auto;
-            background: none; /* Remove background color */
         }
         .project {
             margin: 20px 0;
@@ -93,7 +86,6 @@
     <div class="container">
         <h1>My Data Analysis Portfolio</h1>
         <div class="about">
-            <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong">
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
         </div>
         <div class="project">SQL Project - <span style="color: red;">Coming Soon!!!</span></div>
