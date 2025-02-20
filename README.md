@@ -72,12 +72,13 @@
             object-fit: cover;
         }
         .about-description {
-            text-align: left;
-            font-size: 18px;
+            text-align: center; /* Center the text */
+            font-size: 32px; /* Increased font size */
             font-weight: bold;
             color: var(--text-color);
             max-width: 600px;
             margin-left: 20px;
+            margin-top: 20px;
         }
         .project,
         .testimonial,
@@ -234,10 +235,6 @@
             }
             .about-description {
                 text-align: center;
-                font-size: 32px; /* Increased font size */
-                font-weight: bold;
-                color: var(--text-color);
-                max-width: 600px;
             }
             body {
                 padding: 20px;
@@ -257,7 +254,6 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -293,13 +289,6 @@
             <p>Financial modeling and analysis using Excel.</p>
             <a href="https://github.com/EdmundFrimpong/excel-project" target="_blank">View Project</a>
             <div class="coming-soon">COMING SOON!!!</div>
-        </div>
-    </section>
-    <section id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial">
-            <p>"Edmund's analytical skills are top-notch. He provided invaluable insights for our project."</p>
-            <p><strong>- John Doe, Project Manager</strong></p>
         </div>
     </section>
     <section id="contact" class="contact-card">
