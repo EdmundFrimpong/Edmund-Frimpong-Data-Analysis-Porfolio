@@ -1,27 +1,43 @@
-```markdown
-```markdown
-# About Me
-Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
-
-![Professional Headshot](https://photos.google.com/u/3/album/AF1QipOzVjZietBuj7C51sMlFYNawpVeR5VygMGCYTeh/photo/AF1QipOeo2o4iCXfplJB9zupMjgdf9y6atfueya8alMX)
-
-[LinkedIn](https://www.linkedin.com/in/edmund-frimpong-b650a5141/)
-
-# Projects
-
-## SQL Project
-Coming Soon
-
-## Capstone Project
-Coming Soon
-
-## Excel Project
-Coming Soon
-
-# Theme
-This portfolio uses the `cayman` theme. To apply this theme, add the following line to your `_config.yml` file:
-
-```yaml
-theme: jekyll-theme-cayman
-```
-```
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .project {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Data Analysis Portfolio</h1>
+        <div class="project">SQL Project - <span style="color: red;">Coming Soon</span></div>
+        <div class="project">Capstone Project - <span style="color: red;">Coming Soon</span></div>
+        <div class="project">Excel Project - <span style="color: red;">Coming Soon</span></div>
+    </div>
+</body>
+</html>
