@@ -3,52 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Data Analysis Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            padding: 50px;
+            body {
+    background-image: url('https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/360_F_435314769_TXsKQ6aQfoHMZJfGcXtaXhyoY7iHK3ld.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+;
         }
         .container {
-            max-width: 800px;
+            max-width: 600px;
             margin: auto;
             background: white;
-            padding: 50px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            font-size: 36px;
             color: #333;
         }
-        .coming-soon {
-            font-size: 30px;
-            color: red;
+        .project {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            font-size: 20px;
             font-weight: bold;
-            margin-top: 20px;
         }
-        p {
+        .about {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #d9edf7;
+            border-radius: 5px;
             font-size: 18px;
-            color: #555;
+            font-weight: bold;
+        }
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 10px auto;
+        }
+        .contact {
+            margin-top: 20px;
+            padding: 15px;
+            background: #dff0d8;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact a {
+            color: #337ab7;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .contact img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 id="project-title">Project Title</h1>
-        <div class="coming-soon">Coming Soon</div>
-        <p>Details to follow...</p>
-        <a href="index.html">Back to Portfolio</a>
+        <h1>My Data Analysis Portfolio</h1>
+        <div class="about">
+            <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong">
+            Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
+        </div>
+        <div class="project">SQL Project - <span style="color: red;">Coming Soon</span></div>
+        <div class="project">Capstone Project - <span style="color: red;">Coming Soon</span></div>
+        <div class="project">Excel Project - <span style="color: red;">Coming Soon</span></div>
+        <div class="contact">
+            <p>Contact Me:</p>
+            <a href="mailto:edxfrimpong@gmail.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email">edxfrimpong@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">Edmund Frimpong
+            </a>
+        </div>
     </div>
-    <script>
-        const titles = {
-            "sql_project.html": "SQL Project",
-            "capstone_project.html": "Capstone Project",
-            "excel_project.html": "Excel Project"
-        };
-        document.getElementById("project-title").innerText = titles[window.location.pathname.split("/").pop()] || "Project";
-    </script>
 </body>
 </html>
