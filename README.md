@@ -78,10 +78,11 @@
             100% { transform: scale(1); }
         }
         .project,
-        .testimonial {
+        .testimonial,
+        .contact {
             margin-bottom: 20px;
             padding: 15px;
-            background: var(--background-color);
+            background: rgba(0, 0, 0, 0.7); /* Translucent black background */
             border-radius: 5px;
             font-size: 18px;
             font-weight: bold;
@@ -99,7 +100,7 @@
         .project:hover,
         .testimonial:hover,
         .contact:hover {
-            background: black;
+            background: rgba(0, 0, 0, 0.9); /* Darker translucent effect on hover */
             color: white;
             transform: scale(1.05);
             transition: transform 0.3s, background 0.3s, color 0.3s;
@@ -108,10 +109,6 @@
             width: 100%;
             max-width: 600px;
             padding: 10px 20px;
-            background: var(--background-color);
-            border-radius: 5px;
-            font-size: 16px;
-            color: var(--text-color);
             display: flex;
             justify-content: space-around;
             margin: 20px auto;
