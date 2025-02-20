@@ -64,6 +64,7 @@
             width: 225px; 
             height: 225px; 
             border-radius: 50%;
+            object-fit: cover; /* Ensures the image fits the container without stretching */
         }
         .about-description {
             text-align: left;
