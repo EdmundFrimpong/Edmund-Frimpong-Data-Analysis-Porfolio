@@ -6,7 +6,7 @@
     <title>Data Analysis Portfolio</title>
     <style>
         body {
-    background-image: url('https://github.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/blob/main/1390854.webp');
+    background-image: url('https://github.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/blob/main/878114.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
