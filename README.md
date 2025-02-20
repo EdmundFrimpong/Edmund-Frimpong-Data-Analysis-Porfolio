@@ -27,17 +27,60 @@
             font-size: 18px;
             font-weight: bold;
         }
-        .about img {
-            width: 100%;
-            max-width: 150px;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin: 10px auto;
-            /* Placeholder for removing the background */
-        }
         .project {
             margin: 20px 0;
             padding: 15px;
             background: black; /* Black background for project cards */
             border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white; /* White text */
+        }
+        .project span {
+            color: yellow; /* Change "Coming Soon" text color to yellow */
+        }
+        .contact {
+            margin-top: 20px;
+            padding: 15px;
+            background: #dff0d8;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact a {
+            color: #337ab7;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .contact img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+    </style>
+    <meta name="description" content="Data Analysis Portfolio of Edmund Frimpong showcasing projects and skills in SQL, Excel, and Power BI.">
+</head>
+<body>
+    <div class="container">
+        <h1>My Data Analysis Portfolio</h1>
+        <div class="about">
+            <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong">
+            Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
+        </div>
+        <div class="project">SQL Project - <span style="color: yellow;">Coming Soon</span></div>
+        <div class="project">Capstone Project - <span style="color: yellow;">Coming Soon</span></div>
+        <div class="project">Excel Project - <span style="color: yellow;">Coming Soon</span></div>
+        <div class="contact">
+            <p>Contact Me:</p>
+            <a href="mailto:edxfrimpong@gmail.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email icon"> edxfrimpong@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn icon"> Edmund Frimpong
+            </a>
+        </div>
+    </div>
+</body>
+</html>
