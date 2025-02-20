@@ -14,24 +14,10 @@
             text-align: center;
             padding: 50px;
         }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
         h1 {
-            color: #333;
-        }
-        .project {
-            margin: 20px 0;
-            padding: 15px;
-            background: #e0e0e0;
-            border-radius: 5px;
-            font-size: 20px;
-            font-weight: bold;
+            color: yellow; /* Change header text color to yellow */
+            font-size: 36px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* 3D effect */
         }
         .about {
             margin-bottom: 20px;
@@ -41,13 +27,17 @@
             font-size: 18px;
             font-weight: bold;
         }
-        .about img {
-            width: 100%;
-            max-width: 150px;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin: 10px auto;
+        .project {
+            margin: 20px 0;
+            padding: 15px;
+            background: black; /* Black background for project cards */
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white; /* White text */
+        }
+        .project span {
+            color: yellow; /* Change "Coming Soon" text color to yellow */
         }
         .contact {
             margin-top: 20px;
@@ -79,9 +69,9 @@
             <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong">
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
         </div>
-        <div class="project">SQL Project - <span style="color: red;">Coming Soon</span></div>
-        <div class="project">Capstone Project - <span style="color: red;">Coming Soon</span></div>
-        <div class="project">Excel Project - <span style="color: red;">Coming Soon</span></div>
+        <div class="project">SQL Project - <span style="color: yellow;">Coming Soon</span></div>
+        <div class="project">Capstone Project - <span style="color: yellow;">Coming Soon</span></div>
+        <div class="project">Excel Project - <span style="color: yellow;">Coming Soon</span></div>
         <div class="contact">
             <p>Contact Me:</p>
             <a href="mailto:edxfrimpong@gmail.com">
@@ -92,5 +82,4 @@
             </a>
         </div>
     </div>
-</body>
-</html>
+</body
