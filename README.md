@@ -37,6 +37,17 @@
             font-size: 18px;
             font-weight: bold;
         }
+        .contact {
+            margin-top: 20px;
+            padding: 15px;
+            background: #dff0d8;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact a {
+            color: #337ab7;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -46,6 +57,11 @@
         <div class="project">SQL Project - <span style="color: red;">Coming Soon</span></div>
         <div class="project">Capstone Project - <span style="color: red;">Coming Soon</span></div>
         <div class="project">Excel Project - <span style="color: red;">Coming Soon</span></div>
+        <div class="contact">
+            <p>Contact Me:</p>
+            <p>Email: <a href="mailto:edxfrimpong@gmail.com">edxfrimpong@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">Edmund Frimpong</a></p>
+        </div>
     </div>
 </body>
 </html>
