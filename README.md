@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -101,48 +100,36 @@
             transform: scale(1.05);
             box-shadow: 0 8px 16px var(--shadow-color);
         }
-        .project .coming-soon,
-        .capstone-project .coming-soon,
-        .excel-project .coming-soon {
+
+        /* The new "COMING SOON" ribbon circle */
+        .coming-soon {
             position: absolute;
             top: 0;
             left: 0;
-            background-color: red;
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 0, 0, 0.7); /* Translucent red circle */
             color: white;
-            padding: 5px 15px;
-            font-size: 18px;
+            font-size: 14px;
             font-weight: bold;
-            transform: rotate(-45deg);
-            transform-origin: top left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
             z-index: 1;
-            animation: slide-in 2s ease-in-out infinite alternate;
+            animation: rotateRibbon 4s linear infinite; /* Animation for rotating the circle */
         }
-        @keyframes slide-in {
+
+        /* Animation to rotate the ribbon */
+        @keyframes rotateRibbon {
             0% {
-                top: -30px;
-                opacity: 0;
+                transform: rotate(0deg);
             }
             100% {
-                top: 20px;
-                opacity: 1;
+                transform: rotate(360deg);
             }
         }
-        /* "Contact Me" only in projects with email and LinkedIn */
-        .contact-me {
-            text-align: center;
-            color: white;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        .contact-me a {
-            color: #ffd700;
-            text-decoration: none;
-            margin: 5px;
-            font-weight: bold;
-        }
-        .contact-me a:hover {
-            color: #ff8c00;
-        }
+
         .contact {
             width: 100%;
             max-width: 600px;
@@ -240,33 +227,18 @@
     </section>
     <section id="projects">
         <div class="project">
-            <div class="contact-me">
-                <p>Contact Me:</p>
-                <a href="mailto:edxfrimpong@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">LinkedIn</a>
-            </div>
             <h3>SQL Project</h3>
             <p>Analysis of sales data using SQL.</p>
             <a href="https://github.com/EdmundFrimpong/sql-project" target="_blank">View Project</a>
             <div class="coming-soon">COMING SOON!!!</div>
         </div>
         <div class="project">
-            <div class="contact-me">
-                <p>Contact Me:</p>
-                <a href="mailto:edxfrimpong@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">LinkedIn</a>
-            </div>
             <h3>Capstone Project</h3>
             <p>Comprehensive data analysis project integrating multiple skills.</p>
             <a href="https://github.com/EdmundFrimpong/capstone-project" target="_blank">View Project</a>
             <div class="coming-soon">COMING SOON!!!</div>
         </div>
         <div class="project">
-            <div class="contact-me">
-                <p>Contact Me:</p>
-                <a href="mailto:edxfrimpong@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">LinkedIn</a>
-            </div>
             <h3>Excel Project</h3>
             <p>Financial modeling and analysis using Excel.</p>
             <a href="https://github.com/EdmundFrimpong/excel-project" target="_blank">View Project</a>
