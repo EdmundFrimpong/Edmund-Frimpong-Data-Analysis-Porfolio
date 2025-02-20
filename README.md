@@ -49,6 +49,7 @@
             font-size: 18px;
             font-weight: bold;
             color: white; /* White text */
+            transition: transform 0.3s, background 0.3s, color 0.3s; /* Smooth transition for changes */
         }
         .project {
             margin: 20px 0;
@@ -58,6 +59,7 @@
             font-size: 20px;
             font-weight: bold;
             color: yellow; /* Yellow text */
+            transition: transform 0.3s, background 0.3s, color 0.3s; /* Smooth transition for changes */
         }
         .project span {
             color: red; /* Change "Coming Soon" text color to red */
@@ -70,6 +72,7 @@
             border-radius: 5px;
             font-size: 16px;
             color: yellow; /* Yellow text */
+            transition: transform 0.3s, background 0.3s, color 0.3s; /* Smooth transition for changes */
         }
         .contact a {
             color: blue; /* Change LinkedIn URL and email color to blue */
@@ -83,6 +86,14 @@
             width: 24px;
             height: 24px;
             margin-right: 8px;
+        }
+        .about:hover,
+        .project:hover,
+        .contact:hover {
+            background: linear-gradient(90deg, #ff8c00, #ffd700); /* Gradient background on hover */
+            color: black; /* Text color change on hover */
+            transform: scale(1.05); /* Slightly increase size on hover */
+            transition: transform 0.3s, background 0.3s, color 0.3s; /* Smooth transition for changes */
         }
     </style>
     <meta name="description" content="Data Analysis Portfolio of Edmund Frimpong showcasing projects and skills in SQL, Excel, and Power BI.">
