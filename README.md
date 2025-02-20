@@ -71,7 +71,6 @@
         }
         .about,
         .project,
-        .contact,
         .testimonial {
             margin-bottom: 20px;
             padding: 15px;
@@ -97,13 +96,23 @@
             color: black;
             transform: scale(1.05);
         }
+        .contact {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px 20px;
+            background: var(--background-color);
+            border-radius: 5px;
+            font-size: 16px;
+            color: var(--text-color);
+            display: flex;
+            justify-content: space-around;
+            margin: 20px auto;
+        }
         .contact a {
             color: blue;
             text-decoration: none;
             display: flex;
             align-items: center;
-            justify-content: center;
-            margin: 10px 0;
             transition: transform 0.3s, color 0.3s;
         }
         .contact a:hover {
@@ -126,6 +135,7 @@
             background: black;
             color: white;
             text-align: center;
+            clear: both; /* Ensure the footer stays below the contact card */
         }
         footer a {
             color: #ffd700;
@@ -195,19 +205,11 @@
                 <p><strong>- John Doe, Project Manager</strong></p>
             </div>
         </section>
-        <section id="contact" class="contact">
-            <p>Contact Me:</p>
-            <a href="mailto:edxfrimpong@gmail.com">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email icon"> edxfrimpong@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn icon"> Edmund Frimpong
-            </a>
-        </section>
     </div>
-    <footer>
-        <p>&copy; 2025 Edmund Frimpong. All rights reserved.</p>
-        <p><a href="#top">Back to top</a></p>
-    </footer>
-</body>
-</html>
+    <section id="contact" class="contact">
+        <p>Contact Me:</p>
+        <a href="mailto:edxfrimpong@gmail.com">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email icon"> edxfrimpong@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">
+            <img
