@@ -24,6 +24,9 @@
             padding: 50px;
             color: var(--text-color);
         }
+        html {
+            scroll-behavior: smooth;
+        }
         nav ul {
             display: flex;
             justify-content: center;
@@ -68,7 +71,8 @@
         }
         .about,
         .project,
-        .contact {
+        .contact,
+        .testimonial {
             margin-bottom: 20px;
             padding: 15px;
             background: var(--background-color);
@@ -87,7 +91,8 @@
             animation: pulse 2s infinite;
         }
         .about:hover,
-        .project:hover {
+        .project:hover,
+        .testimonial:hover {
             background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             color: black;
             transform: scale(1.05);
@@ -105,8 +110,30 @@
             transform: scale(1.05);
             color: red;
         }
+        .skills {
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        .skills i {
+            margin-right: 10px;
+        }
         section {
             margin: 40px 0;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #ff8c00;
         }
         @media (max-width: 768px) {
             .container {
@@ -122,25 +149,51 @@
         }
     </style>
     <meta name="description" content="Data Analysis Portfolio of Edmund Frimpong showcasing projects and skills in SQL, Excel, and Power BI.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div class="container">
-        <h1>My Data Analysis Portfolio</h1>
+        <h1 id="top">My Data Analysis Portfolio</h1>
         <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong" class="headshot">
         <section id="about" class="about">
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
         </section>
+        <section id="skills" class="skills">
+            <i class="fas fa-database"></i> SQL
+            <i class="fas fa-chart-line"></i> Power BI
+            <i class="fas fa-file-excel"></i> Excel
+        </section>
         <section id="projects">
-            <div class="project">SQL Project - <span>Coming Soon!!!</span></div>
-            <div class="project">Capstone Project - <span>Coming Soon!!!</span></div>
-            <div class="project">Excel Project - <span>Coming Soon!!!</span></div>
+            <div class="project">
+                <h3>SQL Project</h3>
+                <p>Analysis of sales data using SQL.</p>
+                <a href="https://github.com/EdmundFrimpong/sql-project" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Capstone Project</h3>
+                <p>Comprehensive data analysis project integrating multiple skills.</p>
+                <a href="https://github.com/EdmundFrimpong/capstone-project" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Excel Project</h3>
+                <p>Financial modeling and analysis using Excel.</p>
+                <a href="https://github.com/EdmundFrimpong/excel-project" target="_blank">View Project</a>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"Edmund's analytical skills are top-notch. He provided invaluable insights for our project."</p>
+                <p><strong>- John Doe, Project Manager</strong></p>
+            </div>
         </section>
         <section id="contact" class="contact">
             <p>Contact Me:</p>
@@ -152,5 +205,9 @@
             </a>
         </section>
     </div>
+    <footer>
+        <p>&copy; 2025 Edmund Frimpong. All rights reserved.</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
 </body>
 </html>
