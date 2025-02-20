@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edmund Frimpong - Data Analysis Portfolio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
         body {
             background-image: url('https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/878114.jpg');
             background-size: cover;
@@ -15,9 +17,24 @@
             padding: 50px;
         }
         h1 {
-            color: yellow; /* Change header text color to yellow */
-            font-size: 36px;
+            font-family: 'Lobster', cursive; /* Change font to Lobster */
+            font-size: 48px; /* Increase font size */
+            background: linear-gradient(90deg, #ff8c00, #ffd700); /* Gradient text color */
+            -webkit-background-clip: text;
+            color: transparent; /* Set text color to transparent to show gradient */
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* 3D effect */
+            animation: pulse 2s infinite; /* Add animation */
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
         .about {
             margin-bottom: 20px;
