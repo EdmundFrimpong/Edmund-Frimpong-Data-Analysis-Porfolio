@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -130,6 +131,51 @@
             }
         }
 
+        .contact-card {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7); /* Dark background */
+            border-radius: var(--card-radius);
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        .contact-card h3 {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Space between icon and text */
+        }
+
+        .contact-link i {
+            font-size: 20px; /* Icon size */
+        }
+
+        .contact-link:hover {
+            color: var(--secondary-color); /* Change color on hover */
+            transform: scale(1.05); /* Slight zoom effect on hover */
+            transition: transform 0.3s, color 0.3s;
+        }
+
         .contact {
             width: 100%;
             max-width: 600px;
@@ -252,9 +298,16 @@
             <p><strong>- John Doe, Project Manager</strong></p>
         </div>
     </section>
-    <section id="contact" class="contact">
-        <a href="mailto:edxfrimpong@gmail.com">edxfrimpong@gmail.com</a>
-        <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">Edmund Frimpong</a>
+    <section id="contact" class="contact-card">
+        <h3>Contact Me</h3>
+        <div class="contact-details">
+            <a href="mailto:edxfrimpong@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i> Email: edxfrimpong@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin"></i> LinkedIn: Edmund Frimpong
+            </a>
+        </div>
     </section>
     <footer>
         <p>&copy; 2025 Edmund Frimpong. All rights reserved.</p>
