@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -37,6 +38,13 @@
             font-size: 18px;
             font-weight: bold;
         }
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 10px auto;
+        }
         .contact {
             margin-top: 20px;
             padding: 15px;
@@ -47,20 +55,36 @@
         .contact a {
             color: #337ab7;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        .contact img {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>My Data Analysis Portfolio</h1>
-        <div class="about">Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI</div>
+        <div class="about">
+            <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG20240915101212.jpg" alt="Edmund Frimpong">
+            Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
+        </div>
         <div class="project">SQL Project - <span style="color: red;">Coming Soon</span></div>
         <div class="project">Capstone Project - <span style="color: red;">Coming Soon</span></div>
         <div class="project">Excel Project - <span style="color: red;">Coming Soon</span></div>
         <div class="contact">
             <p>Contact Me:</p>
-            <p>Email: <a href="mailto:edxfrimpong@gmail.com">edxfrimpong@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">Edmund Frimpong</a></p>
+            <a href="mailto:edxfrimpong@gmail.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email">edxfrimpong@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">Edmund Frimpong
+            </a>
         </div>
     </div>
 </body>
