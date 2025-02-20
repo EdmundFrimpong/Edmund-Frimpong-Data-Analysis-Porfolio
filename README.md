@@ -91,10 +91,12 @@
         }
         .about:hover,
         .project:hover,
-        .testimonial:hover {
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            color: black;
+        .testimonial:hover,
+        .contact:hover {
+            background: black;
+            color: white;
             transform: scale(1.05);
+            transition: transform 0.3s, background 0.3s, color 0.3s;
         }
         .contact {
             width: 100%;
@@ -111,8 +113,6 @@
         .contact a {
             color: blue;
             text-decoration: none;
-            display: flex;
-            align-items: center;
             transition: transform 0.3s, color 0.3s;
         }
         .contact a:hover {
@@ -207,9 +207,12 @@
         </section>
     </div>
     <section id="contact" class="contact">
-        <p>Contact Me:</p>
-        <a href="mailto:edxfrimpong@gmail.com">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email icon"> edxfrimpong@gmail.com
-        </a>
-        <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">
-            <img
+        <a href="mailto:edxfrimpong@gmail.com">edxfrimpong@gmail.com</a>
+        <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">Edmund Frimpong</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Edmund Frimpong. All rights reserved.</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>
