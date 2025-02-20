@@ -49,9 +49,7 @@
             width: 225px; /* Increase size by 50% */
             height: 225px; /* Increase size by 50% */
             border-radius: 50%; /* Make it a circle */
-            position: absolute; /* Position absolute for overlay */
-            top: -30px; /* Adjust position */
-            left: calc(50% - 112.5px); /* Center the image */
+            margin: 0 auto 20px; /* Center the image and add margin at the bottom */
             background: none; /* Remove background color */
         }
         .project {
@@ -94,8 +92,8 @@
 <body>
     <div class="container">
         <h1>My Data Analysis Portfolio</h1>
+        <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong" class="headshot">
         <div class="about">
-            <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong">
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
         </div>
         <div class="project">SQL Project - <span style="color: red;">Coming Soon!!!</span></div>
