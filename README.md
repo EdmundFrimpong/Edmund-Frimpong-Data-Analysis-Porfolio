@@ -127,7 +127,8 @@
                 opacity: 1;
             }
         }
-        .project .contact-me {
+        /* "Contact Me" only in projects with email and LinkedIn */
+        .contact-me {
             text-align: center;
             color: white;
             font-size: 18px;
