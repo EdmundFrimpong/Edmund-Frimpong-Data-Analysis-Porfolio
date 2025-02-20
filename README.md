@@ -16,12 +16,13 @@
             --shadow-color: rgba(0, 0, 0, 0.4);
         }
 
+        /* Set Montserrat as the default font for the entire page */
         body {
+            font-family: 'Montserrat', sans-serif;
             background-image: url('https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/878114.jpg');
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
-            font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 50px;
             color: var(--text-color);
@@ -57,7 +58,7 @@
             margin-bottom: 40px;
         }
         h1 {
-            font-family: 'Montserrat', sans-serif; /* Changed to Montserrat font */
+            font-family: 'Montserrat', sans-serif;
             font-size: 48px;
             color: white;
             text-align: center;
