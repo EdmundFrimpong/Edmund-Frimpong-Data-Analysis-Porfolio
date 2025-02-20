@@ -7,6 +7,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@700&display=swap');
 
+        :root {
+            --primary-color: #ff8c00;
+            --secondary-color: #ffd700;
+            --background-color: black;
+            --text-color: white;
+        }
+
         body {
             background-image: url('https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/878114.jpg');
             background-size: cover;
@@ -15,100 +22,127 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
+            color: var(--text-color);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
         h1 {
-            font-family: 'Proxima Nova', sans-serif; /* Change font to Proxima Nova */
-            font-size: 48px; /* Increase font size */
-            background: linear-gradient(90deg, #ff8c00, #ffd700); /* Gradient text color */
+            font-family: 'Proxima Nova', sans-serif; 
+            font-size: 48px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
             -webkit-background-clip: text;
-            color: transparent; /* Set text color to transparent to show gradient */
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* 3D effect */
+            color: transparent;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
         }
         .headshot {
-            width: 225px; /* Increase size by 50% */
-            height: 225px; /* Increase size by 50% */
-            border-radius: 50%; /* Make it a circle */
-            margin: 20px auto; /* Center the image and add margin */
+            width: 225px; 
+            height: 225px; 
+            border-radius: 50%; 
+            margin: 20px auto;
         }
         @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-            100% {
-                transform: scale(1);
-            }
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
-        .about {
+        .about,
+        .project,
+        .contact {
             margin-bottom: 20px;
             padding: 15px;
-            background: black; /* Black background for about card */
+            background: var(--background-color);
             border-radius: 5px;
             font-size: 18px;
             font-weight: bold;
-            color: white; /* White text */
-            transition: transform 0.3s, background 0.3s, color 0.3s; /* Smooth transition for changes */
+            color: var(--text-color);
+            transition: transform 0.3s, background 0.3s, color 0.3s;
         }
         .project {
-            margin: 20px 0;
-            padding: 15px;
-            background: black; /* Black background for project cards */
-            border-radius: 5px;
             font-size: 20px;
-            font-weight: bold;
-            color: yellow; /* Yellow text */
-            transition: transform 0.3s, background 0.3s, color 0.3s; /* Smooth transition for changes */
+            color: yellow;
         }
         .project span {
-            color: red; /* Change "Coming Soon" text color to red */
-            animation: pulse 2s infinite; /* Add animation */
+            color: red;
+            animation: pulse 2s infinite;
         }
-        .contact {
-            margin-top: 20px;
-            padding: 15px;
-            background: black; /* Black background for contact card */
-            border-radius: 5px;
-            font-size: 16px;
-            color: yellow; /* Yellow text */
-            transition: transform 0.3s, background 0.3s, color 0.3s; /* Smooth transition for changes */
+        .about:hover,
+        .project:hover {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            color: black;
+            transform: scale(1.05);
         }
         .contact a {
-            color: blue; /* Change LinkedIn URL and email color to blue */
+            color: blue;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 10px 0;
+            transition: transform 0.3s, color 0.3s;
         }
-        .contact img {
-            width: 24px;
-            height: 24px;
-            margin-right: 8px;
+        .contact a:hover {
+            transform: scale(1.05);
+            color: red;
         }
-        .about:hover,
-        .project:hover,
-        .contact:hover {
-            background: linear-gradient(90deg, #ff8c00, #ffd700); /* Gradient background on hover */
-            color: black; /* Text color change on hover */
-            transform: scale(1.05); /* Slightly increase size on hover */
-            transition: transform 0.3s, background 0.3s, color 0.3s; /* Smooth transition for changes */
+        section {
+            margin: 40px 0;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .headshot {
+                width: 150px;
+                height: 150px;
+            }
+            h1 {
+                font-size: 36px;
+            }
         }
     </style>
     <meta name="description" content="Data Analysis Portfolio of Edmund Frimpong showcasing projects and skills in SQL, Excel, and Power BI.">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>My Data Analysis Portfolio</h1>
         <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong" class="headshot">
-        <div class="about">
+        <section id="about" class="about">
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
-        </div>
-        <div class="project">SQL Project - <span style="color: red;">Coming Soon!!!</span></div>
-        <div class="project">Capstone Project - <span style="color: red;">Coming Soon!!!</span></div>
-        <div class="project">Excel Project - <span style="color: red;">Coming Soon!!!</span></div>
-        <div class="contact">
+        </section>
+        <section id="projects">
+            <div class="project">SQL Project - <span>Coming Soon!!!</span></div>
+            <div class="project">Capstone Project - <span>Coming Soon!!!</span></div>
+            <div class="project">Excel Project - <span>Coming Soon!!!</span></div>
+        </section>
+        <section id="contact" class="contact">
             <p>Contact Me:</p>
             <a href="mailto:edxfrimpong@gmail.com">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email icon"> edxfrimpong@gmail.com
@@ -116,7 +150,7 @@
             <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn icon"> Edmund Frimpong
             </a>
-        </div>
+        </section>
     </div>
 </body>
 </html>
