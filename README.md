@@ -23,7 +23,6 @@
             -webkit-background-clip: text;
             color: transparent; /* Set text color to transparent to show gradient */
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /* 3D effect */
-            animation: pulse 2s infinite; /* Add animation */
         }
         @keyframes pulse {
             0% {
@@ -61,7 +60,8 @@
             color: yellow; /* Yellow text */
         }
         .project span {
-            color: yellow; /* Change "Coming Soon" text color to yellow */
+            color: red; /* Change "Coming Soon" text color to red */
+            animation: pulse 2s infinite; /* Add animation */
         }
         .contact {
             margin-top: 20px;
@@ -94,9 +94,9 @@
             <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong">
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
         </div>
-        <div class="project">SQL Project - <span style="color: yellow;">Coming Soon</span></div>
-        <div class="project">Capstone Project - <span style="color: yellow;">Coming Soon</span></div>
-        <div class="project">Excel Project - <span style="color: yellow;">Coming Soon</span></div>
+        <div class="project">SQL Project - <span style="color: red;">Coming Soon!!!</span></div>
+        <div class="project">Capstone Project - <span style="color: red;">Coming Soon!!!</span></div>
+        <div class="project">Excel Project - <span style="color: red;">Coming Soon!!!</span></div>
         <div class="contact">
             <p>Contact Me:</p>
             <a href="mailto:edxfrimpong@gmail.com">
