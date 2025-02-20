@@ -206,4 +206,33 @@
         <div class="project">
             <h3>SQL Project</h3>
             <p>Analysis of sales data using SQL.</p>
-            <a href="https://github.com/EdmundFrimpong/sql-project" target="_blank">View Project<
+            <a href="https://github.com/EdmundFrimpong/sql-project" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Capstone Project</h3>
+            <p>Comprehensive data analysis project integrating multiple skills.</p>
+            <a href="https://github.com/EdmundFrimpong/capstone-project" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Excel Project</h3>
+            <p>Financial modeling and analysis using Excel.</p>
+            <a href="https://github.com/EdmundFrimpong/excel-project" target="_blank">View Project</a>
+        </div>
+    </section>
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"Edmund's analytical skills are top-notch. He provided invaluable insights for our project."</p>
+            <p><strong>- John Doe, Project Manager</strong></p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <a href="mailto:edxfrimpong@gmail.com">edxfrimpong@gmail.com</a>
+        <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">Edmund Frimpong</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Edmund Frimpong. All rights reserved.</p>
+        <p><a href="#top">Back to top</a></p>
+    </footer>
+</body>
+</html>
