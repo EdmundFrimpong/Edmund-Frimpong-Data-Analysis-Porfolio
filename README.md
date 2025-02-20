@@ -47,8 +47,9 @@
         }
         .container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 1fr 2fr;
             gap: 20px;
+            align-items: center;
         }
         h1 {
             font-family: 'Proxima Nova', sans-serif; 
@@ -57,19 +58,25 @@
             -webkit-background-clip: text;
             color: transparent;
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            text-align: left; /* Align title to the left */
         }
         .headshot {
             width: 225px; 
             height: 225px; 
-            border-radius: 50%; 
-            margin: 20px auto;
+            border-radius: 50%;
+            margin: 0 auto 0 0; /* Align the image to the left */
+        }
+        .about-description {
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--text-color);
         }
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
-        .about,
         .project,
         .testimonial {
             margin-bottom: 20px;
@@ -89,7 +96,6 @@
             color: red;
             animation: pulse 2s infinite;
         }
-        .about:hover,
         .project:hover,
         .testimonial:hover,
         .contact:hover {
@@ -148,13 +154,22 @@
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: 1fr;
+                text-align: center;
             }
             .headshot {
                 width: 150px;
                 height: 150px;
+                margin: 0 auto; /* Center the image */
             }
             h1 {
                 font-size: 36px;
+                text-align: center; /* Center the title on small screens */
+            }
+            .about-description {
+                text-align: center; /* Center the about description on small screens */
+            }
+            body {
+                padding: 20px;
             }
         }
     </style>
@@ -171,48 +186,18 @@
         </ul>
     </nav>
     <div class="container">
-        <h1 id="top">My Data Analysis Portfolio</h1>
-        <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong" class="headshot">
-        <section id="about" class="about">
+        <div>
+            <img src="https://raw.githubusercontent.com/EdmundFrimpong/Edmund-Frimpong-Data-Analysis-Porfolio/main/IMG_20250219_205530%20copy.png" alt="Edmund Frimpong" class="headshot">
+        </div>
+        <div class="about-description">
             Operations & Risk Analyst | Google Data Analytics Certificate | Data Storytelling & Reporting | SQL, Excel & Power BI
-        </section>
-        <section id="skills" class="skills">
-            <i class="fas fa-database"></i> SQL
-            <i class="fas fa-chart-line"></i> Power BI
-            <i class="fas fa-file-excel"></i> Excel
-        </section>
-        <section id="projects">
-            <div class="project">
-                <h3>SQL Project</h3>
-                <p>Analysis of sales data using SQL.</p>
-                <a href="https://github.com/EdmundFrimpong/sql-project" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Capstone Project</h3>
-                <p>Comprehensive data analysis project integrating multiple skills.</p>
-                <a href="https://github.com/EdmundFrimpong/capstone-project" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Excel Project</h3>
-                <p>Financial modeling and analysis using Excel.</p>
-                <a href="https://github.com/EdmundFrimpong/excel-project" target="_blank">View Project</a>
-            </div>
-        </section>
-        <section id="testimonials">
-            <h2>Testimonials</h2>
-            <div class="testimonial">
-                <p>"Edmund's analytical skills are top-notch. He provided invaluable insights for our project."</p>
-                <p><strong>- John Doe, Project Manager</strong></p>
-            </div>
-        </section>
+        </div>
     </div>
-    <section id="contact" class="contact">
-        <a href="mailto:edxfrimpong@gmail.com">edxfrimpong@gmail.com</a>
-        <a href="https://www.linkedin.com/in/edmund-frimpong-b650a5141/" target="_blank">Edmund Frimpong</a>
+    <h1 id="top">Data Analysis Portfolio</h1>
+    <section id="skills" class="skills">
+        <i class="fas fa-database"></i> SQL
+        <i class="fas fa-chart-line"></i> Power BI
+        <i class="fas fa-file-excel"></i> Excel
     </section>
-    <footer>
-        <p>&copy; 2025 Edmund Frimpong. All rights reserved.</p>
-        <p><a href="#top">Back to top</a></p>
-    </footer>
-</body>
-</html>
+    <section id="projects">
+        <div class="project">
