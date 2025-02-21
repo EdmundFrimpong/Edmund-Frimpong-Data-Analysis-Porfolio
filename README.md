@@ -274,19 +274,19 @@
         <div class="project">
             <h3>SQL Project</h3>
             <p>Analysis of sales data using SQL.</p>
-            <a href="https://github.com/EdmundFrimpong/sql-project" target="_blank">View Project</a>
+            <a href="https://edmundfrimpong.github.io/SQL-Project/" target="_blank">View Project</a>
             <div class="coming-soon">COMING SOON!!!</div>
         </div>
         <div class="project">
             <h3>Capstone Project</h3>
             <p>Comprehensive data analysis project integrating multiple skills.</p>
-            <a href="https://github.com/EdmundFrimpong/capstone-project" target="_blank">View Project</a>
+            <a href="https://edmundfrimpong.github.io/Captsone-Project/" target="_blank">View Project</a>
             <div class="coming-soon">COMING SOON!!!</div>
         </div>
         <div class="project">
             <h3>Excel Project</h3>
             <p>Financial modeling and analysis using Excel.</p>
-            <a href="https://github.com/EdmundFrimpong/excel-project" target="_blank">View Project</a>
+            <a href="https://edmundfrimpong.github.io/Excel-Project/" target="_blank">View Project</a>
             <div class="coming-soon">COMING SOON!!!</div>
         </div>
     </section>
