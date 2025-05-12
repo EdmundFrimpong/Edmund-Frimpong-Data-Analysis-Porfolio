@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -71,8 +72,8 @@
             object-fit: cover;
         }
         .about-description {
-            text-align: center; /* Center the text */
-            font-size: 32px; /* Increased font size */
+            text-align: center;
+            font-size: 32px;
             font-weight: bold;
             color: var(--text-color);
             max-width: 600px;
@@ -102,39 +103,10 @@
             box-shadow: 0 8px 16px var(--shadow-color);
         }
 
-        /* The new "COMING SOON" ribbon circle */
-        .coming-soon {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 80px;
-            height: 80px;
-            background-color: rgba(255, 0, 0, 0.7); /* Translucent red circle */
-            color: white;
-            font-size: 14px;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            z-index: 1;
-            animation: rotateRibbon 4s linear infinite; /* Animation for rotating the circle */
-        }
-
-        /* Animation to rotate the ribbon */
-        @keyframes rotateRibbon {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
         .contact-card {
             margin: 20px auto;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.7); /* Dark background */
+            background: rgba(0, 0, 0, 0.7);
             border-radius: var(--card-radius);
             text-align: center;
             width: 100%;
@@ -163,16 +135,16 @@
             font-weight: bold;
             display: flex;
             align-items: center;
-            gap: 10px; /* Space between icon and text */
+            gap: 10px;
         }
 
         .contact-link i {
-            font-size: 20px; /* Icon size */
+            font-size: 20px;
         }
 
         .contact-link:hover {
-            color: var(--secondary-color); /* Change color on hover */
-            transform: scale(1.05); /* Slight zoom effect on hover */
+            color: var(--secondary-color);
+            transform: scale(1.05);
             transition: transform 0.3s, color 0.3s;
         }
 
@@ -275,19 +247,16 @@
             <h3>SQL Project</h3>
             <p>Analysis of sales data using SQL.</p>
             <a href="https://edmundfrimpong.github.io/SQL-Project/" target="_blank">View Project</a>
-            <div class="coming-soon">COMING SOON!!!</div>
         </div>
         <div class="project">
             <h3>Capstone Project</h3>
             <p>Comprehensive data analysis project integrating multiple skills.</p>
             <a href="https://edmundfrimpong.github.io/Captsone-Project/" target="_blank">View Project</a>
-            <div class="coming-soon">COMING SOON!!!</div>
         </div>
         <div class="project">
             <h3>Excel Project</h3>
             <p>Financial modeling and analysis using Excel.</p>
             <a href="https://edmundfrimpong.github.io/Excel-Project/" target="_blank">View Project</a>
-            <div class="coming-soon">COMING SOON!!!</div>
         </div>
     </section>
     <section id="contact" class="contact-card">
